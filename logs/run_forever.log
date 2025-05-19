@@ -1,0 +1,905 @@
+2025-05-18 23:12:18,589 - INFO - \U0001f501 Starting SAPERA 2.0 auto-run loop.
+2025-05-18 23:12:18,590 - INFO - \U0001f7e2 Running main.py
+2025-05-18 23:12:31,127 - INFO - \u2705 main.py completed with return code 0
+2025-05-18 23:12:31,127 - INFO - STDOUT:
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 1s 771ms/step
+2025-05-18 23:12:31,127 - WARNING - STDERR:
+2025-05-18 23:12:20.433079: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2025-05-18 23:12:20.433156: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2025-05-18 23:12:25,435 - INFO - Strategy config: {'ema_fast': 10, 'ema_slow': 50, 'rsi_period': 14, 'rsi_overbought': 70, 'rsi_oversold': 30, 'atr_period': 14, 'adx_period': 14, 'bollinger_period': 20, 'bollinger_dev': 2, 'volatility_filter': 0.001}
+2025-05-18 23:12:25,436 - INFO - setting up API-client for environment practice
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\logging\__init__.py", line 1103, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 33: character maps to <undefined>
+Call stack:
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 148, in <module>
+    main()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 71, in main
+    notifier, wallet, strategy, bot, fetcher, lstm = initialize()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 64, in initialize
+    bot = EnhancedTradingBot(wallet_manager=wallet, notifier=notifier)
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\trade_executor.py", line 85, in __init__
+    logging.info("\u2705 EnhancedTradingBot initialized")
+Message: '\u2705 EnhancedTradingBot initialized'
+Arguments: ()
+2025-05-18 23:12:25,436 - INFO - \u2705 EnhancedTradingBot initialized
+2025-05-18 23:12:25,441 - INFO - setting up API-client for environment practice
+2025-05-18 23:12:25,442 - INFO - DataFetcher initialized.
+2025-05-18 23:12:26.224185: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2025-05-18 23:12:26.227028: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublas64_11.dll'; dlerror: cublas64_11.dll not found
+2025-05-18 23:12:26.229690: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublasLt64_11.dll'; dlerror: cublasLt64_11.dll not found
+2025-05-18 23:12:26.232913: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cufft64_10.dll'; dlerror: cufft64_10.dll not found
+2025-05-18 23:12:26.235709: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'curand64_10.dll'; dlerror: curand64_10.dll not found
+2025-05-18 23:12:26.238031: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusolver64_11.dll'; dlerror: cusolver64_11.dll not found
+2025-05-18 23:12:26.240796: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusparse64_11.dll'; dlerror: cusparse64_11.dll not found
+2025-05-18 23:12:26.243356: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudnn64_8.dll'; dlerror: cudnn64_8.dll not found
+2025-05-18 23:12:26.243428: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2025-05-18 23:12:26.243914: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\logging\__init__.py", line 1103, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 33: character maps to <undefined>
+Call stack:
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 148, in <module>
+    main()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 71, in main
+    notifier, wallet, strategy, bot, fetcher, lstm = initialize()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 66, in initialize
+    lstm = LSTMModel(model_path=MODEL_PATH, look_back=LOOK_BACK)
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 40, in __init__
+    self.model = self.build_model()
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 53, in build_model
+    safe_log("\u2705 LSTM classification model built.")
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 17, in safe_log
+    logging.info(msg)
+Message: '\u2705 LSTM classification model built.'
+Arguments: ()
+2025-05-18 23:12:27,061 - INFO - \u2705 LSTM classification model built.
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\logging\__init__.py", line 1103, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4e6' in position 33: character maps to <undefined>
+Call stack:
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 148, in <module>
+    main()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 71, in main
+    notifier, wallet, strategy, bot, fetcher, lstm = initialize()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 66, in initialize
+    lstm = LSTMModel(model_path=MODEL_PATH, look_back=LOOK_BACK)
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 41, in __init__
+    self.load_model()
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 118, in load_model
+    safe_log(f"\U0001f4e6 Model loaded \u2192 {self.model_path}")
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 17, in safe_log
+    logging.info(msg)
+Message: '\U0001f4e6 Model loaded \u2192 models/lstm_model.keras'
+Arguments: ()
+2025-05-18 23:12:27,461 - INFO - \U0001f4e6 Model loaded \u2192 models/lstm_model.keras
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\logging\__init__.py", line 1103, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4e6' in position 33: character maps to <undefined>
+Call stack:
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 148, in <module>
+    main()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 71, in main
+    notifier, wallet, strategy, bot, fetcher, lstm = initialize()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 66, in initialize
+    lstm = LSTMModel(model_path=MODEL_PATH, look_back=LOOK_BACK)
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 42, in __init__
+    self.load_scaler()
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 129, in load_scaler
+    safe_log(f"\U0001f4e6 Scaler loaded \u2192 {self.scaler_path}")
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 17, in safe_log
+    logging.info(msg)
+Message: '\U0001f4e6 Scaler loaded \u2192 models/lstm_model_scaler.save'
+Arguments: ()
+2025-05-18 23:12:27,464 - INFO - \U0001f4e6 Scaler loaded \u2192 models/lstm_model_scaler.save
+2025-05-18 23:12:27,466 - INFO - Session started with $1000.00. Wallet remaining: $7000.00
+2025-05-18 23:12:27,467 - INFO - Fetching live market data...
+2025-05-18 23:12:27,467 - INFO - Fetching live data for instruments: EUR_USD,USD_JPY
+2025-05-18 23:12:27,467 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-30763959-002/pricing
+2025-05-18 23:12:27,981 - INFO - Live data fetched successfully.
+2025-05-18 23:12:27,981 - WARNING - Live data invalid or too short (required: 50, got: 2). Falling back to historical.
+2025-05-18 23:12:28,522 - INFO - Telegram alert sent: Live data invalid or too short (required: 50, got: 2). Falling back to historical.
+2025-05-18 23:12:28,540 - INFO - Applying strategy indicators...
+2025-05-18 23:12:28,548 - INFO - Running LSTM price prediction...
+2025-05-18 23:12:29,415 - INFO - LSTM prediction: Hold
+2025-05-18 23:12:29,415 - INFO - Scanning strategy signals...
+2025-05-18 23:12:29,541 - INFO - Trade Rejected  EUR_USD | Signal: Buy | LSTM: Hold
+2025-05-18 23:12:29,641 - INFO - Trade Rejected  EUR_USD | Signal: Buy | LSTM: Hold
+2025-05-18 23:12:29,653 - INFO - Trade Rejected  EUR_USD | Signal: Sell | LSTM: Hold
+2025-05-18 23:12:29,709 - INFO - Trade Rejected  EUR_USD | Signal: Sell | LSTM: Hold
+2025-05-18 23:12:30,201 - INFO - Telegram alert sent: Trading session completed successfully.
+2025-05-18 23:12:31,128 - INFO - \u23f3 Waiting 5 minutes until next run...
+2025-05-18 23:17:31,138 - INFO - \U0001f7e2 Running main.py
+2025-05-18 23:17:42,322 - INFO - \u2705 main.py completed with return code 0
+2025-05-18 23:17:42,323 - INFO - STDOUT:
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 1s 533ms/step
+2025-05-18 23:17:42,323 - WARNING - STDERR:
+2025-05-18 23:17:33.113329: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2025-05-18 23:17:33.113389: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2025-05-18 23:17:38,390 - INFO - Strategy config: {'ema_fast': 10, 'ema_slow': 50, 'rsi_period': 14, 'rsi_overbought': 70, 'rsi_oversold': 30, 'atr_period': 14, 'adx_period': 14, 'bollinger_period': 20, 'bollinger_dev': 2, 'volatility_filter': 0.001}
+2025-05-18 23:17:38,391 - INFO - setting up API-client for environment practice
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\logging\__init__.py", line 1103, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 33: character maps to <undefined>
+Call stack:
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 148, in <module>
+    main()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 71, in main
+    notifier, wallet, strategy, bot, fetcher, lstm = initialize()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 64, in initialize
+    bot = EnhancedTradingBot(wallet_manager=wallet, notifier=notifier)
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\trade_executor.py", line 85, in __init__
+    logging.info("\u2705 EnhancedTradingBot initialized")
+Message: '\u2705 EnhancedTradingBot initialized'
+Arguments: ()
+2025-05-18 23:17:38,391 - INFO - \u2705 EnhancedTradingBot initialized
+2025-05-18 23:17:38,395 - INFO - setting up API-client for environment practice
+2025-05-18 23:17:38,395 - INFO - DataFetcher initialized.
+2025-05-18 23:17:38.640023: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2025-05-18 23:17:38.642100: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublas64_11.dll'; dlerror: cublas64_11.dll not found
+2025-05-18 23:17:38.644199: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublasLt64_11.dll'; dlerror: cublasLt64_11.dll not found
+2025-05-18 23:17:38.645691: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cufft64_10.dll'; dlerror: cufft64_10.dll not found
+2025-05-18 23:17:38.647148: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'curand64_10.dll'; dlerror: curand64_10.dll not found
+2025-05-18 23:17:38.648873: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusolver64_11.dll'; dlerror: cusolver64_11.dll not found
+2025-05-18 23:17:38.652194: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusparse64_11.dll'; dlerror: cusparse64_11.dll not found
+2025-05-18 23:17:38.654792: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudnn64_8.dll'; dlerror: cudnn64_8.dll not found
+2025-05-18 23:17:38.654862: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2025-05-18 23:17:38.655176: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\logging\__init__.py", line 1103, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 33: character maps to <undefined>
+Call stack:
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 148, in <module>
+    main()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 71, in main
+    notifier, wallet, strategy, bot, fetcher, lstm = initialize()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 66, in initialize
+    lstm = LSTMModel(model_path=MODEL_PATH, look_back=LOOK_BACK)
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 40, in __init__
+    self.model = self.build_model()
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 53, in build_model
+    safe_log("\u2705 LSTM classification model built.")
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 17, in safe_log
+    logging.info(msg)
+Message: '\u2705 LSTM classification model built.'
+Arguments: ()
+2025-05-18 23:17:39,330 - INFO - \u2705 LSTM classification model built.
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\logging\__init__.py", line 1103, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4e6' in position 33: character maps to <undefined>
+Call stack:
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 148, in <module>
+    main()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 71, in main
+    notifier, wallet, strategy, bot, fetcher, lstm = initialize()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 66, in initialize
+    lstm = LSTMModel(model_path=MODEL_PATH, look_back=LOOK_BACK)
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 41, in __init__
+    self.load_model()
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 118, in load_model
+    safe_log(f"\U0001f4e6 Model loaded \u2192 {self.model_path}")
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 17, in safe_log
+    logging.info(msg)
+Message: '\U0001f4e6 Model loaded \u2192 models/lstm_model.keras'
+Arguments: ()
+2025-05-18 23:17:39,675 - INFO - \U0001f4e6 Model loaded \u2192 models/lstm_model.keras
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\logging\__init__.py", line 1103, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4e6' in position 33: character maps to <undefined>
+Call stack:
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 148, in <module>
+    main()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 71, in main
+    notifier, wallet, strategy, bot, fetcher, lstm = initialize()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 66, in initialize
+    lstm = LSTMModel(model_path=MODEL_PATH, look_back=LOOK_BACK)
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 42, in __init__
+    self.load_scaler()
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 129, in load_scaler
+    safe_log(f"\U0001f4e6 Scaler loaded \u2192 {self.scaler_path}")
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 17, in safe_log
+    logging.info(msg)
+Message: '\U0001f4e6 Scaler loaded \u2192 models/lstm_model_scaler.save'
+Arguments: ()
+2025-05-18 23:17:39,677 - INFO - \U0001f4e6 Scaler loaded \u2192 models/lstm_model_scaler.save
+2025-05-18 23:17:39,679 - INFO - Session started with $1000.00. Wallet remaining: $6000.00
+2025-05-18 23:17:39,680 - INFO - Fetching live market data...
+2025-05-18 23:17:39,680 - INFO - Fetching live data for instruments: EUR_USD,USD_JPY
+2025-05-18 23:17:39,680 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-30763959-002/pricing
+2025-05-18 23:17:39,991 - INFO - Live data fetched successfully.
+2025-05-18 23:17:39,991 - WARNING - Live data invalid or too short (required: 50, got: 2). Falling back to historical.
+2025-05-18 23:17:40,556 - INFO - Telegram alert sent: Live data invalid or too short (required: 50, got: 2). Falling back to historical.
+2025-05-18 23:17:40,569 - INFO - Applying strategy indicators...
+2025-05-18 23:17:40,575 - INFO - Running LSTM price prediction...
+2025-05-18 23:17:41,158 - INFO - LSTM prediction: Hold
+2025-05-18 23:17:41,158 - INFO - Scanning strategy signals...
+2025-05-18 23:17:41,241 - INFO - Trade Rejected  EUR_USD | Signal: Buy | LSTM: Hold
+2025-05-18 23:17:41,315 - INFO - Trade Rejected  EUR_USD | Signal: Buy | LSTM: Hold
+2025-05-18 23:17:41,322 - INFO - Trade Rejected  EUR_USD | Signal: Sell | LSTM: Hold
+2025-05-18 23:17:41,355 - INFO - Trade Rejected  EUR_USD | Signal: Sell | LSTM: Hold
+2025-05-18 23:17:41,773 - INFO - Telegram alert sent: Trading session completed successfully.
+2025-05-18 23:17:42,323 - INFO - \u23f3 Waiting 5 minutes until next run...
+2025-05-18 23:22:42,330 - INFO - \U0001f7e2 Running main.py
+2025-05-18 23:23:05,926 - INFO - \u2705 main.py completed with return code 0
+2025-05-18 23:23:05,926 - INFO - STDOUT:
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 1s 681ms/step
+2025-05-18 23:23:05,926 - WARNING - STDERR:
+2025-05-18 23:22:47.569361: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2025-05-18 23:22:47.569414: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2025-05-18 23:23:02,075 - INFO - Strategy config: {'ema_fast': 10, 'ema_slow': 50, 'rsi_period': 14, 'rsi_overbought': 70, 'rsi_oversold': 30, 'atr_period': 14, 'adx_period': 14, 'bollinger_period': 20, 'bollinger_dev': 2, 'volatility_filter': 0.001}
+2025-05-18 23:23:02,076 - INFO - setting up API-client for environment practice
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\logging\__init__.py", line 1103, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 33: character maps to <undefined>
+Call stack:
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 148, in <module>
+    main()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 71, in main
+    notifier, wallet, strategy, bot, fetcher, lstm = initialize()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 64, in initialize
+    bot = EnhancedTradingBot(wallet_manager=wallet, notifier=notifier)
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\trade_executor.py", line 85, in __init__
+    logging.info("\u2705 EnhancedTradingBot initialized")
+Message: '\u2705 EnhancedTradingBot initialized'
+Arguments: ()
+2025-05-18 23:23:02,076 - INFO - \u2705 EnhancedTradingBot initialized
+2025-05-18 23:23:02,120 - INFO - setting up API-client for environment practice
+2025-05-18 23:23:02,121 - INFO - DataFetcher initialized.
+2025-05-18 23:23:02.167172: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2025-05-18 23:23:02.169197: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublas64_11.dll'; dlerror: cublas64_11.dll not found
+2025-05-18 23:23:02.171241: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublasLt64_11.dll'; dlerror: cublasLt64_11.dll not found
+2025-05-18 23:23:02.173325: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cufft64_10.dll'; dlerror: cufft64_10.dll not found
+2025-05-18 23:23:02.175434: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'curand64_10.dll'; dlerror: curand64_10.dll not found
+2025-05-18 23:23:02.177167: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusolver64_11.dll'; dlerror: cusolver64_11.dll not found
+2025-05-18 23:23:02.178939: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusparse64_11.dll'; dlerror: cusparse64_11.dll not found
+2025-05-18 23:23:02.180947: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudnn64_8.dll'; dlerror: cudnn64_8.dll not found
+2025-05-18 23:23:02.181004: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2025-05-18 23:23:02.181415: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\logging\__init__.py", line 1103, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 33: character maps to <undefined>
+Call stack:
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 148, in <module>
+    main()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 71, in main
+    notifier, wallet, strategy, bot, fetcher, lstm = initialize()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 66, in initialize
+    lstm = LSTMModel(model_path=MODEL_PATH, look_back=LOOK_BACK)
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 40, in __init__
+    self.model = self.build_model()
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 53, in build_model
+    safe_log("\u2705 LSTM classification model built.")
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 17, in safe_log
+    logging.info(msg)
+Message: '\u2705 LSTM classification model built.'
+Arguments: ()
+2025-05-18 23:23:02,692 - INFO - \u2705 LSTM classification model built.
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\logging\__init__.py", line 1103, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4e6' in position 33: character maps to <undefined>
+Call stack:
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 148, in <module>
+    main()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 71, in main
+    notifier, wallet, strategy, bot, fetcher, lstm = initialize()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 66, in initialize
+    lstm = LSTMModel(model_path=MODEL_PATH, look_back=LOOK_BACK)
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 41, in __init__
+    self.load_model()
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 118, in load_model
+    safe_log(f"\U0001f4e6 Model loaded \u2192 {self.model_path}")
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 17, in safe_log
+    logging.info(msg)
+Message: '\U0001f4e6 Model loaded \u2192 models/lstm_model.keras'
+Arguments: ()
+2025-05-18 23:23:03,024 - INFO - \U0001f4e6 Model loaded \u2192 models/lstm_model.keras
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\logging\__init__.py", line 1103, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4e6' in position 33: character maps to <undefined>
+Call stack:
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 148, in <module>
+    main()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 71, in main
+    notifier, wallet, strategy, bot, fetcher, lstm = initialize()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 66, in initialize
+    lstm = LSTMModel(model_path=MODEL_PATH, look_back=LOOK_BACK)
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 42, in __init__
+    self.load_scaler()
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 129, in load_scaler
+    safe_log(f"\U0001f4e6 Scaler loaded \u2192 {self.scaler_path}")
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 17, in safe_log
+    logging.info(msg)
+Message: '\U0001f4e6 Scaler loaded \u2192 models/lstm_model_scaler.save'
+Arguments: ()
+2025-05-18 23:23:03,033 - INFO - \U0001f4e6 Scaler loaded \u2192 models/lstm_model_scaler.save
+2025-05-18 23:23:03,035 - INFO - Session started with $1000.00. Wallet remaining: $5000.00
+2025-05-18 23:23:03,035 - INFO - Fetching live market data...
+2025-05-18 23:23:03,035 - INFO - Fetching live data for instruments: EUR_USD,USD_JPY
+2025-05-18 23:23:03,035 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-30763959-002/pricing
+2025-05-18 23:23:03,311 - INFO - Live data fetched successfully.
+2025-05-18 23:23:03,311 - WARNING - Live data invalid or too short (required: 50, got: 2). Falling back to historical.
+2025-05-18 23:23:03,916 - INFO - Telegram alert sent: Live data invalid or too short (required: 50, got: 2). Falling back to historical.
+2025-05-18 23:23:03,949 - INFO - Applying strategy indicators...
+2025-05-18 23:23:03,959 - INFO - Running LSTM price prediction...
+2025-05-18 23:23:04,700 - INFO - LSTM prediction: Hold
+2025-05-18 23:23:04,700 - INFO - Scanning strategy signals...
+2025-05-18 23:23:04,839 - INFO - Trade Rejected  EUR_USD | Signal: Buy | LSTM: Hold
+2025-05-18 23:23:04,935 - INFO - Trade Rejected  EUR_USD | Signal: Buy | LSTM: Hold
+2025-05-18 23:23:04,945 - INFO - Trade Rejected  EUR_USD | Signal: Sell | LSTM: Hold
+2025-05-18 23:23:04,978 - INFO - Trade Rejected  EUR_USD | Signal: Sell | LSTM: Hold
+2025-05-18 23:23:05,363 - INFO - Telegram alert sent: Trading session completed successfully.
+2025-05-18 23:23:05,926 - INFO - \u23f3 Waiting 5 minutes until next run...
+2025-05-18 23:28:05,926 - INFO - \U0001f7e2 Running main.py
+2025-05-18 23:28:16,005 - INFO - \u2705 main.py completed with return code 0
+2025-05-18 23:28:16,005 - INFO - STDOUT:
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 0s 431ms/step
+2025-05-18 23:28:16,005 - WARNING - STDERR:
+2025-05-18 23:28:07.822936: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2025-05-18 23:28:07.822995: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2025-05-18 23:28:12,770 - INFO - Strategy config: {'ema_fast': 10, 'ema_slow': 50, 'rsi_period': 14, 'rsi_overbought': 70, 'rsi_oversold': 30, 'atr_period': 14, 'adx_period': 14, 'bollinger_period': 20, 'bollinger_dev': 2, 'volatility_filter': 0.001}
+2025-05-18 23:28:12,771 - INFO - setting up API-client for environment practice
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\logging\__init__.py", line 1103, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 33: character maps to <undefined>
+Call stack:
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 148, in <module>
+    main()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 71, in main
+    notifier, wallet, strategy, bot, fetcher, lstm = initialize()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 64, in initialize
+    bot = EnhancedTradingBot(wallet_manager=wallet, notifier=notifier)
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\trade_executor.py", line 85, in __init__
+    logging.info("\u2705 EnhancedTradingBot initialized")
+Message: '\u2705 EnhancedTradingBot initialized'
+Arguments: ()
+2025-05-18 23:28:12,771 - INFO - \u2705 EnhancedTradingBot initialized
+2025-05-18 23:28:12,774 - INFO - setting up API-client for environment practice
+2025-05-18 23:28:12,775 - INFO - DataFetcher initialized.
+2025-05-18 23:28:12.817325: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2025-05-18 23:28:12.819625: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublas64_11.dll'; dlerror: cublas64_11.dll not found
+2025-05-18 23:28:12.821042: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublasLt64_11.dll'; dlerror: cublasLt64_11.dll not found
+2025-05-18 23:28:12.822420: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cufft64_10.dll'; dlerror: cufft64_10.dll not found
+2025-05-18 23:28:12.823767: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'curand64_10.dll'; dlerror: curand64_10.dll not found
+2025-05-18 23:28:12.826981: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusolver64_11.dll'; dlerror: cusolver64_11.dll not found
+2025-05-18 23:28:12.828540: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusparse64_11.dll'; dlerror: cusparse64_11.dll not found
+2025-05-18 23:28:12.829896: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudnn64_8.dll'; dlerror: cudnn64_8.dll not found
+2025-05-18 23:28:12.829952: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2025-05-18 23:28:12.830246: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\logging\__init__.py", line 1103, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 33: character maps to <undefined>
+Call stack:
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 148, in <module>
+    main()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 71, in main
+    notifier, wallet, strategy, bot, fetcher, lstm = initialize()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 66, in initialize
+    lstm = LSTMModel(model_path=MODEL_PATH, look_back=LOOK_BACK)
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 40, in __init__
+    self.model = self.build_model()
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 53, in build_model
+    safe_log("\u2705 LSTM classification model built.")
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 17, in safe_log
+    logging.info(msg)
+Message: '\u2705 LSTM classification model built.'
+Arguments: ()
+2025-05-18 23:28:13,399 - INFO - \u2705 LSTM classification model built.
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\logging\__init__.py", line 1103, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4e6' in position 33: character maps to <undefined>
+Call stack:
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 148, in <module>
+    main()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 71, in main
+    notifier, wallet, strategy, bot, fetcher, lstm = initialize()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 66, in initialize
+    lstm = LSTMModel(model_path=MODEL_PATH, look_back=LOOK_BACK)
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 41, in __init__
+    self.load_model()
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 118, in load_model
+    safe_log(f"\U0001f4e6 Model loaded \u2192 {self.model_path}")
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 17, in safe_log
+    logging.info(msg)
+Message: '\U0001f4e6 Model loaded \u2192 models/lstm_model.keras'
+Arguments: ()
+2025-05-18 23:28:13,669 - INFO - \U0001f4e6 Model loaded \u2192 models/lstm_model.keras
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\logging\__init__.py", line 1103, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4e6' in position 33: character maps to <undefined>
+Call stack:
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 148, in <module>
+    main()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 71, in main
+    notifier, wallet, strategy, bot, fetcher, lstm = initialize()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 66, in initialize
+    lstm = LSTMModel(model_path=MODEL_PATH, look_back=LOOK_BACK)
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 42, in __init__
+    self.load_scaler()
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 129, in load_scaler
+    safe_log(f"\U0001f4e6 Scaler loaded \u2192 {self.scaler_path}")
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 17, in safe_log
+    logging.info(msg)
+Message: '\U0001f4e6 Scaler loaded \u2192 models/lstm_model_scaler.save'
+Arguments: ()
+2025-05-18 23:28:13,671 - INFO - \U0001f4e6 Scaler loaded \u2192 models/lstm_model_scaler.save
+2025-05-18 23:28:13,673 - INFO - Session started with $1000.00. Wallet remaining: $4000.00
+2025-05-18 23:28:13,673 - INFO - Fetching live market data...
+2025-05-18 23:28:13,674 - INFO - Fetching live data for instruments: EUR_USD,USD_JPY
+2025-05-18 23:28:13,674 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-30763959-002/pricing
+2025-05-18 23:28:13,947 - INFO - Live data fetched successfully.
+2025-05-18 23:28:13,947 - WARNING - Live data invalid or too short (required: 50, got: 2). Falling back to historical.
+2025-05-18 23:28:14,507 - INFO - Telegram alert sent: Live data invalid or too short (required: 50, got: 2). Falling back to historical.
+2025-05-18 23:28:14,520 - INFO - Applying strategy indicators...
+2025-05-18 23:28:14,525 - INFO - Running LSTM price prediction...
+2025-05-18 23:28:15,018 - INFO - LSTM prediction: Hold
+2025-05-18 23:28:15,018 - INFO - Scanning strategy signals...
+2025-05-18 23:28:15,083 - INFO - Trade Rejected  EUR_USD | Signal: Buy | LSTM: Hold
+2025-05-18 23:28:15,142 - INFO - Trade Rejected  EUR_USD | Signal: Buy | LSTM: Hold
+2025-05-18 23:28:15,150 - INFO - Trade Rejected  EUR_USD | Signal: Sell | LSTM: Hold
+2025-05-18 23:28:15,180 - INFO - Trade Rejected  EUR_USD | Signal: Sell | LSTM: Hold
+2025-05-18 23:28:15,534 - INFO - Telegram alert sent: Trading session completed successfully.
+2025-05-18 23:28:16,006 - INFO - \u23f3 Waiting 5 minutes until next run...
+2025-05-18 23:33:16,014 - INFO - \U0001f7e2 Running main.py
+2025-05-18 23:33:27,464 - INFO - \u2705 main.py completed with return code 0
+2025-05-18 23:33:27,464 - INFO - STDOUT:
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 1s 554ms/step
+2025-05-18 23:33:27,464 - WARNING - STDERR:
+2025-05-18 23:33:18.008832: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2025-05-18 23:33:18.008902: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2025-05-18 23:33:23,543 - INFO - Strategy config: {'ema_fast': 10, 'ema_slow': 50, 'rsi_period': 14, 'rsi_overbought': 70, 'rsi_oversold': 30, 'atr_period': 14, 'adx_period': 14, 'bollinger_period': 20, 'bollinger_dev': 2, 'volatility_filter': 0.001}
+2025-05-18 23:33:23,543 - INFO - setting up API-client for environment practice
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\logging\__init__.py", line 1103, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 33: character maps to <undefined>
+Call stack:
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 148, in <module>
+    main()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 71, in main
+    notifier, wallet, strategy, bot, fetcher, lstm = initialize()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 64, in initialize
+    bot = EnhancedTradingBot(wallet_manager=wallet, notifier=notifier)
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\trade_executor.py", line 85, in __init__
+    logging.info("\u2705 EnhancedTradingBot initialized")
+Message: '\u2705 EnhancedTradingBot initialized'
+Arguments: ()
+2025-05-18 23:33:23,544 - INFO - \u2705 EnhancedTradingBot initialized
+2025-05-18 23:33:23,547 - INFO - setting up API-client for environment practice
+2025-05-18 23:33:23,547 - INFO - DataFetcher initialized.
+2025-05-18 23:33:23.587968: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2025-05-18 23:33:23.590591: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublas64_11.dll'; dlerror: cublas64_11.dll not found
+2025-05-18 23:33:23.592829: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublasLt64_11.dll'; dlerror: cublasLt64_11.dll not found
+2025-05-18 23:33:23.595302: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cufft64_10.dll'; dlerror: cufft64_10.dll not found
+2025-05-18 23:33:23.597367: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'curand64_10.dll'; dlerror: curand64_10.dll not found
+2025-05-18 23:33:23.599577: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusolver64_11.dll'; dlerror: cusolver64_11.dll not found
+2025-05-18 23:33:23.601447: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusparse64_11.dll'; dlerror: cusparse64_11.dll not found
+2025-05-18 23:33:23.603352: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudnn64_8.dll'; dlerror: cudnn64_8.dll not found
+2025-05-18 23:33:23.603393: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2025-05-18 23:33:23.603829: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\logging\__init__.py", line 1103, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 33: character maps to <undefined>
+Call stack:
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 148, in <module>
+    main()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 71, in main
+    notifier, wallet, strategy, bot, fetcher, lstm = initialize()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 66, in initialize
+    lstm = LSTMModel(model_path=MODEL_PATH, look_back=LOOK_BACK)
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 40, in __init__
+    self.model = self.build_model()
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 53, in build_model
+    safe_log("\u2705 LSTM classification model built.")
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 17, in safe_log
+    logging.info(msg)
+Message: '\u2705 LSTM classification model built.'
+Arguments: ()
+2025-05-18 23:33:24,393 - INFO - \u2705 LSTM classification model built.
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\logging\__init__.py", line 1103, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4e6' in position 33: character maps to <undefined>
+Call stack:
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 148, in <module>
+    main()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 71, in main
+    notifier, wallet, strategy, bot, fetcher, lstm = initialize()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 66, in initialize
+    lstm = LSTMModel(model_path=MODEL_PATH, look_back=LOOK_BACK)
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 41, in __init__
+    self.load_model()
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 118, in load_model
+    safe_log(f"\U0001f4e6 Model loaded \u2192 {self.model_path}")
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 17, in safe_log
+    logging.info(msg)
+Message: '\U0001f4e6 Model loaded \u2192 models/lstm_model.keras'
+Arguments: ()
+2025-05-18 23:33:24,704 - INFO - \U0001f4e6 Model loaded \u2192 models/lstm_model.keras
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\logging\__init__.py", line 1103, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4e6' in position 33: character maps to <undefined>
+Call stack:
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 148, in <module>
+    main()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 71, in main
+    notifier, wallet, strategy, bot, fetcher, lstm = initialize()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 66, in initialize
+    lstm = LSTMModel(model_path=MODEL_PATH, look_back=LOOK_BACK)
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 42, in __init__
+    self.load_scaler()
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 129, in load_scaler
+    safe_log(f"\U0001f4e6 Scaler loaded \u2192 {self.scaler_path}")
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 17, in safe_log
+    logging.info(msg)
+Message: '\U0001f4e6 Scaler loaded \u2192 models/lstm_model_scaler.save'
+Arguments: ()
+2025-05-18 23:33:24,708 - INFO - \U0001f4e6 Scaler loaded \u2192 models/lstm_model_scaler.save
+2025-05-18 23:33:24,711 - INFO - Session started with $1000.00. Wallet remaining: $3000.00
+2025-05-18 23:33:24,711 - INFO - Fetching live market data...
+2025-05-18 23:33:24,711 - INFO - Fetching live data for instruments: EUR_USD,USD_JPY
+2025-05-18 23:33:24,711 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-30763959-002/pricing
+2025-05-18 23:33:25,032 - INFO - Live data fetched successfully.
+2025-05-18 23:33:25,033 - WARNING - Live data invalid or too short (required: 50, got: 2). Falling back to historical.
+2025-05-18 23:33:25,638 - INFO - Telegram alert sent: Live data invalid or too short (required: 50, got: 2). Falling back to historical.
+2025-05-18 23:33:25,652 - INFO - Applying strategy indicators...
+2025-05-18 23:33:25,658 - INFO - Running LSTM price prediction...
+2025-05-18 23:33:26,273 - INFO - LSTM prediction: Hold
+2025-05-18 23:33:26,274 - INFO - Scanning strategy signals...
+2025-05-18 23:33:26,365 - INFO - Trade Rejected  EUR_USD | Signal: Buy | LSTM: Hold
+2025-05-18 23:33:26,453 - INFO - Trade Rejected  EUR_USD | Signal: Buy | LSTM: Hold
+2025-05-18 23:33:26,466 - INFO - Trade Rejected  EUR_USD | Signal: Sell | LSTM: Hold
+2025-05-18 23:33:26,511 - INFO - Trade Rejected  EUR_USD | Signal: Sell | LSTM: Hold
+2025-05-18 23:33:26,898 - INFO - Telegram alert sent: Trading session completed successfully.
+2025-05-18 23:33:27,465 - INFO - \u23f3 Waiting 5 minutes until next run...
+2025-05-18 23:38:27,466 - INFO - \U0001f7e2 Running main.py
+2025-05-18 23:38:47,369 - INFO - \u2705 main.py completed with return code 0
+2025-05-18 23:38:47,369 - INFO - STDOUT:
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 0s 456ms/step
+2025-05-18 23:38:47,369 - WARNING - STDERR:
+2025-05-18 23:38:31.811573: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2025-05-18 23:38:31.811630: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2025-05-18 23:38:43,999 - INFO - Strategy config: {'ema_fast': 10, 'ema_slow': 50, 'rsi_period': 14, 'rsi_overbought': 70, 'rsi_oversold': 30, 'atr_period': 14, 'adx_period': 14, 'bollinger_period': 20, 'bollinger_dev': 2, 'volatility_filter': 0.001}
+2025-05-18 23:38:43,999 - INFO - setting up API-client for environment practice
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\logging\__init__.py", line 1103, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 33: character maps to <undefined>
+Call stack:
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 148, in <module>
+    main()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 71, in main
+    notifier, wallet, strategy, bot, fetcher, lstm = initialize()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 64, in initialize
+    bot = EnhancedTradingBot(wallet_manager=wallet, notifier=notifier)
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\trade_executor.py", line 85, in __init__
+    logging.info("\u2705 EnhancedTradingBot initialized")
+Message: '\u2705 EnhancedTradingBot initialized'
+Arguments: ()
+2025-05-18 23:38:44,000 - INFO - \u2705 EnhancedTradingBot initialized
+2025-05-18 23:38:44,033 - INFO - setting up API-client for environment practice
+2025-05-18 23:38:44,033 - INFO - DataFetcher initialized.
+2025-05-18 23:38:44.077026: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2025-05-18 23:38:44.078728: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublas64_11.dll'; dlerror: cublas64_11.dll not found
+2025-05-18 23:38:44.080386: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublasLt64_11.dll'; dlerror: cublasLt64_11.dll not found
+2025-05-18 23:38:44.081866: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cufft64_10.dll'; dlerror: cufft64_10.dll not found
+2025-05-18 23:38:44.083454: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'curand64_10.dll'; dlerror: curand64_10.dll not found
+2025-05-18 23:38:44.084893: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusolver64_11.dll'; dlerror: cusolver64_11.dll not found
+2025-05-18 23:38:44.086284: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusparse64_11.dll'; dlerror: cusparse64_11.dll not found
+2025-05-18 23:38:44.087774: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudnn64_8.dll'; dlerror: cudnn64_8.dll not found
+2025-05-18 23:38:44.087818: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2025-05-18 23:38:44.088249: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\logging\__init__.py", line 1103, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 33: character maps to <undefined>
+Call stack:
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 148, in <module>
+    main()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 71, in main
+    notifier, wallet, strategy, bot, fetcher, lstm = initialize()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 66, in initialize
+    lstm = LSTMModel(model_path=MODEL_PATH, look_back=LOOK_BACK)
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 40, in __init__
+    self.model = self.build_model()
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 53, in build_model
+    safe_log("\u2705 LSTM classification model built.")
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 17, in safe_log
+    logging.info(msg)
+Message: '\u2705 LSTM classification model built.'
+Arguments: ()
+2025-05-18 23:38:44,607 - INFO - \u2705 LSTM classification model built.
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\logging\__init__.py", line 1103, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4e6' in position 33: character maps to <undefined>
+Call stack:
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 148, in <module>
+    main()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 71, in main
+    notifier, wallet, strategy, bot, fetcher, lstm = initialize()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 66, in initialize
+    lstm = LSTMModel(model_path=MODEL_PATH, look_back=LOOK_BACK)
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 41, in __init__
+    self.load_model()
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 118, in load_model
+    safe_log(f"\U0001f4e6 Model loaded \u2192 {self.model_path}")
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 17, in safe_log
+    logging.info(msg)
+Message: '\U0001f4e6 Model loaded \u2192 models/lstm_model.keras'
+Arguments: ()
+2025-05-18 23:38:44,878 - INFO - \U0001f4e6 Model loaded \u2192 models/lstm_model.keras
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\logging\__init__.py", line 1103, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4e6' in position 33: character maps to <undefined>
+Call stack:
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 148, in <module>
+    main()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 71, in main
+    notifier, wallet, strategy, bot, fetcher, lstm = initialize()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 66, in initialize
+    lstm = LSTMModel(model_path=MODEL_PATH, look_back=LOOK_BACK)
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 42, in __init__
+    self.load_scaler()
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 129, in load_scaler
+    safe_log(f"\U0001f4e6 Scaler loaded \u2192 {self.scaler_path}")
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 17, in safe_log
+    logging.info(msg)
+Message: '\U0001f4e6 Scaler loaded \u2192 models/lstm_model_scaler.save'
+Arguments: ()
+2025-05-18 23:38:44,881 - INFO - \U0001f4e6 Scaler loaded \u2192 models/lstm_model_scaler.save
+2025-05-18 23:38:44,882 - INFO - Session started with $1000.00. Wallet remaining: $2000.00
+2025-05-18 23:38:44,882 - INFO - Fetching live market data...
+2025-05-18 23:38:44,883 - INFO - Fetching live data for instruments: EUR_USD,USD_JPY
+2025-05-18 23:38:44,883 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-30763959-002/pricing
+2025-05-18 23:38:45,177 - INFO - Live data fetched successfully.
+2025-05-18 23:38:45,177 - WARNING - Live data invalid or too short (required: 50, got: 2). Falling back to historical.
+2025-05-18 23:38:45,829 - INFO - Telegram alert sent: Live data invalid or too short (required: 50, got: 2). Falling back to historical.
+2025-05-18 23:38:45,853 - INFO - Applying strategy indicators...
+2025-05-18 23:38:45,858 - INFO - Running LSTM price prediction...
+2025-05-18 23:38:46,361 - INFO - LSTM prediction: Hold
+2025-05-18 23:38:46,361 - INFO - Scanning strategy signals...
+2025-05-18 23:38:46,423 - INFO - Trade Rejected  EUR_USD | Signal: Buy | LSTM: Hold
+2025-05-18 23:38:46,482 - INFO - Trade Rejected  EUR_USD | Signal: Buy | LSTM: Hold
+2025-05-18 23:38:46,489 - INFO - Trade Rejected  EUR_USD | Signal: Sell | LSTM: Hold
+2025-05-18 23:38:46,513 - INFO - Trade Rejected  EUR_USD | Signal: Sell | LSTM: Hold
+2025-05-18 23:38:46,889 - INFO - Telegram alert sent: Trading session completed successfully.
+2025-05-18 23:38:47,370 - INFO - \u23f3 Waiting 5 minutes until next run...
+2025-05-18 23:43:47,382 - INFO - \U0001f7e2 Running main.py
+2025-05-18 23:44:00,305 - INFO - \u2705 main.py completed with return code 0
+2025-05-18 23:44:00,306 - INFO - STDOUT:
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 1s 511ms/step
+2025-05-18 23:44:00,306 - WARNING - STDERR:
+2025-05-18 23:43:50.209127: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2025-05-18 23:43:50.209192: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2025-05-18 23:43:56,568 - INFO - Strategy config: {'ema_fast': 10, 'ema_slow': 50, 'rsi_period': 14, 'rsi_overbought': 70, 'rsi_oversold': 30, 'atr_period': 14, 'adx_period': 14, 'bollinger_period': 20, 'bollinger_dev': 2, 'volatility_filter': 0.001}
+2025-05-18 23:43:56,568 - INFO - setting up API-client for environment practice
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\logging\__init__.py", line 1103, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 33: character maps to <undefined>
+Call stack:
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 148, in <module>
+    main()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 71, in main
+    notifier, wallet, strategy, bot, fetcher, lstm = initialize()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 64, in initialize
+    bot = EnhancedTradingBot(wallet_manager=wallet, notifier=notifier)
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\trade_executor.py", line 85, in __init__
+    logging.info("\u2705 EnhancedTradingBot initialized")
+Message: '\u2705 EnhancedTradingBot initialized'
+Arguments: ()
+2025-05-18 23:43:56,569 - INFO - \u2705 EnhancedTradingBot initialized
+2025-05-18 23:43:56,572 - INFO - setting up API-client for environment practice
+2025-05-18 23:43:56,572 - INFO - DataFetcher initialized.
+2025-05-18 23:43:56.618279: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2025-05-18 23:43:56.621100: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublas64_11.dll'; dlerror: cublas64_11.dll not found
+2025-05-18 23:43:56.623966: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublasLt64_11.dll'; dlerror: cublasLt64_11.dll not found
+2025-05-18 23:43:56.626770: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cufft64_10.dll'; dlerror: cufft64_10.dll not found
+2025-05-18 23:43:56.629611: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'curand64_10.dll'; dlerror: curand64_10.dll not found
+2025-05-18 23:43:56.632791: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusolver64_11.dll'; dlerror: cusolver64_11.dll not found
+2025-05-18 23:43:56.635928: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusparse64_11.dll'; dlerror: cusparse64_11.dll not found
+2025-05-18 23:43:56.638588: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudnn64_8.dll'; dlerror: cudnn64_8.dll not found
+2025-05-18 23:43:56.638632: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2025-05-18 23:43:56.638993: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\logging\__init__.py", line 1103, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 33: character maps to <undefined>
+Call stack:
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 148, in <module>
+    main()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 71, in main
+    notifier, wallet, strategy, bot, fetcher, lstm = initialize()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 66, in initialize
+    lstm = LSTMModel(model_path=MODEL_PATH, look_back=LOOK_BACK)
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 40, in __init__
+    self.model = self.build_model()
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 53, in build_model
+    safe_log("\u2705 LSTM classification model built.")
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 17, in safe_log
+    logging.info(msg)
+Message: '\u2705 LSTM classification model built.'
+Arguments: ()
+2025-05-18 23:43:57,403 - INFO - \u2705 LSTM classification model built.
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\logging\__init__.py", line 1103, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4e6' in position 33: character maps to <undefined>
+Call stack:
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 148, in <module>
+    main()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 71, in main
+    notifier, wallet, strategy, bot, fetcher, lstm = initialize()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 66, in initialize
+    lstm = LSTMModel(model_path=MODEL_PATH, look_back=LOOK_BACK)
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 41, in __init__
+    self.load_model()
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 118, in load_model
+    safe_log(f"\U0001f4e6 Model loaded \u2192 {self.model_path}")
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 17, in safe_log
+    logging.info(msg)
+Message: '\U0001f4e6 Model loaded \u2192 models/lstm_model.keras'
+Arguments: ()
+2025-05-18 23:43:57,832 - INFO - \U0001f4e6 Model loaded \u2192 models/lstm_model.keras
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\logging\__init__.py", line 1103, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Program Files\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4e6' in position 33: character maps to <undefined>
+Call stack:
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 148, in <module>
+    main()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 71, in main
+    notifier, wallet, strategy, bot, fetcher, lstm = initialize()
+  File "C:\NEWW\SAPERA\Sapera_2.0\main.py", line 66, in initialize
+    lstm = LSTMModel(model_path=MODEL_PATH, look_back=LOOK_BACK)
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 42, in __init__
+    self.load_scaler()
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 129, in load_scaler
+    safe_log(f"\U0001f4e6 Scaler loaded \u2192 {self.scaler_path}")
+  File "C:\NEWW\SAPERA\Sapera_2.0\agents\lstm_model.py", line 17, in safe_log
+    logging.info(msg)
+Message: '\U0001f4e6 Scaler loaded \u2192 models/lstm_model_scaler.save'
+Arguments: ()
+2025-05-18 23:43:57,835 - INFO - \U0001f4e6 Scaler loaded \u2192 models/lstm_model_scaler.save
+2025-05-18 23:43:57,837 - INFO - Session started with $1000.00. Wallet remaining: $1000.00
+2025-05-18 23:43:57,837 - INFO - Fetching live market data...
+2025-05-18 23:43:57,838 - INFO - Fetching live data for instruments: EUR_USD,USD_JPY
+2025-05-18 23:43:57,838 - INFO - performing request https://api-fxpractice.oanda.com/v3/accounts/101-002-30763959-002/pricing
+2025-05-18 23:43:58,117 - INFO - Live data fetched successfully.
+2025-05-18 23:43:58,117 - WARNING - Live data invalid or too short (required: 50, got: 2). Falling back to historical.
+2025-05-18 23:43:58,690 - INFO - Telegram alert sent: Live data invalid or too short (required: 50, got: 2). Falling back to historical.
+2025-05-18 23:43:58,710 - INFO - Applying strategy indicators...
+2025-05-18 23:43:58,720 - INFO - Running LSTM price prediction...
+2025-05-18 23:43:59,297 - INFO - LSTM prediction: Hold
+2025-05-18 23:43:59,297 - INFO - Scanning strategy signals...
+2025-05-18 23:43:59,359 - INFO - Trade Rejected  EUR_USD | Signal: Buy | LSTM: Hold
+2025-05-18 23:43:59,418 - INFO - Trade Rejected  EUR_USD | Signal: Buy | LSTM: Hold
+2025-05-18 23:43:59,426 - INFO - Trade Rejected  EUR_USD | Signal: Sell | LSTM: Hold
+2025-05-18 23:43:59,451 - INFO - Trade Rejected  EUR_USD | Signal: Sell | LSTM: Hold
+2025-05-18 23:43:59,807 - INFO - Telegram alert sent: Trading session completed successfully.
+2025-05-18 23:44:00,306 - INFO - \u23f3 Waiting 5 minutes until next run...
+2025-05-18 23:46:25,657 - INFO - \U0001f6d1 Auto-run loop terminated manually.

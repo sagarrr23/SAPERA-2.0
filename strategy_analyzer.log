@@ -1,0 +1,5 @@
+2025-01-25 21:29:11,830 - INFO - Starting Strategy Analyzer...
+2025-01-25 21:29:11,837 - INFO - Loaded data from C:/NEWW/Sapera_2.0/logs/live_data_20250125_212213.csv.
+2025-01-25 21:29:11,837 - INFO - Strategy Analyzer initialized.
+2025-01-25 21:29:11,840 - INFO - Strategy applied successfully.
+2025-01-25 21:29:11,843 - INFO - Analysis results saved to trade_signals_20250125_212911.csv.
