@@ -1,14 +1,25 @@
-# .gitignore
+# === Python / Virtualenv ===
 venv/
 venv310/
 __pycache__/
 *.pyc
+*.pyo
 *.pyd
-*.log
-*.csv
-*.json
-wallet.json
-models/
+
+# === Large or Sensitive Files ===
 *.h5
 *.keras
+*.dll
+*.pkl
+*.ckpt
+*.csv
 *.save
+*.log
+
+# === IDEs ===
+.vscode/
+.idea/
+
+# === OS files ===
+.DS_Store
+Thumbs.db
